@@ -210,12 +210,19 @@ h3{
     text-shadow: 3px 2px 2px black;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+p{
+    text-align: center;
+    display: none;
+}
+article div img{
+    display: none;
+}
 .grid__ofertas{
     margin-top: 5px;
     padding-left: 20px;
     padding-right: 20px;
     display: grid;
-    grid-template-rows: 210px 210px 210px 210px;
+    grid-template-rows: 210px 210px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 5px;
 }
@@ -223,7 +230,7 @@ h3{
     padding-left: 20px;
     padding-right: 20px;
     display: grid;
-    grid-template-rows: 210px 210px 210px 210px;
+    grid-template-rows: 210px 210px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 5px;
 }
@@ -265,18 +272,25 @@ article div img{
         padding-right: 20px;
     }
     .grid__ofertas{
-        grid-template-rows: 200px 200px 200px 200px 200px 200px 200px 200px;
+        grid-template-rows: 200px 200px 200px 200px;
         grid-template-columns: 350px 350px ;
     }
     .grid__solicitados{
-        grid-template-rows: 200px 200px 200px 200px 200px 200px 200px 200px;
+        grid-template-rows: 200px 200px 200px 200px;
         grid-template-columns: 350px 350px;
     }
     main{
-        padding: 0px 10px;
+        padding: 0px 20px;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        margin-top: 145px;
     }
 }
 @media screen and (max-width:720px){
+    article div img{
+        display: none;
+    }
     .headersuperior{
         display: none;
     }
@@ -522,8 +536,7 @@ hr {
 }
 article h2{
     animation-name: opacito;
-    animation-duration: 6s;
-    animation-delay: -2;
+    animation-duration: 3s;
 }
 @keyframes grandimg{
     from{
